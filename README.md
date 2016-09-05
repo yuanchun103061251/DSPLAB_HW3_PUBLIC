@@ -14,8 +14,8 @@
 Seam carving is an algorithm for content-aware image resizing, it was described in the [paper](http://www.win.tue.nl/~wstahw/edu/2IV05/seamcarving.pdf) by S. Avidan & A. Shamir. In contract to stretching, content-aware resizing allows to remove/add pixels which has less meaning while saving more important.
 
 In this programming assignment, we will implement this algorithm and this will involve following tasks:
-* Define an energy function that would map a pixel into enrgy value.
-* Define the path in pixels (called seam), which is width/height of the image.
+* Define an energy function that would map a pixel into energy value.
+* Define the path of pixels (called seam), which length is width/height of the image.
 * Looking for a seam with the minimum energy among all seams(in chosen dimension).
 * Find optimal order of deleting/adding seams
 
