@@ -49,10 +49,10 @@ For this project, and all other projects, you must do a project report in result
 
 ## Rubric
 * +5 pts: Working implementation of gradient of pixel in energyRGB.m
-* +5 pts: Working implementation of reduce pixels by input mask in reduceImageByMask.m
-* +5 pts: Working implementation of image enlarging in enlargeImageByMask.m
 * +20 pts: Working implementation of finding optimal seam in findOptSeam.m
+* +5 pts: Working implementation of reduce pixels by input mask in reduceImageByMask.m
 * +25 pts: Working implementation of finding a transport matrix in findTransportMatrix.m
+* +5 pts: Working implementation of image enlarging in enlargeImageByMask.m
 * +20 pts: Writeup with several examples of image images
 * +5 pts: Extra credit (up to ten points)
 * -5*n pts: Lose 5 points for every time (after the first) you do not follow the instructions for the hand in format
