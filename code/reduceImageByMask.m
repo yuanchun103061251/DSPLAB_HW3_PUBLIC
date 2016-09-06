@@ -1,9 +1,9 @@
-function imageReduced = reduceImageByMask( image, seamMask, isVerical )
+function imageReduced = reduceImageByMask( image, seamMask, isVertical )
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% removes pixels by input mask
-% removes vertical line if isVerical == 1, otherwise horizontal
+% Removes pixels by input mask
+% Removes vertical line if isVertical == 1, otherwise horizontal
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    if (isVerical)
+    if (isVertical)
         imageReduced = reduceImageByMaskVertical(image, seamMask);
     else
         imageReduced = reduceImageByMaskHorizontal(image, seamMask');
@@ -11,9 +11,24 @@ function imageReduced = reduceImageByMask( image, seamMask, isVerical )
 end
 
 function imageReduced = reduceImageByMaskVertical(image, seamMask)
-    %%% Your code here
+    % Note that the type of the mask is logical and you 
+    % can make use of this.
+    
+    %%%%%%%%%%%%%%%%%%
+    % YOUR CODE HERE:
+    %%%%%%%%%%%%%%%%%%
+    
+    %%%%%%%%%%%%%%%%%%
+    % END OF YOUR CODE
+    %%%%%%%%%%%%%%%%%%
 end
 
 function imageReduced = reduceImageByMaskHorizontal(image, seamMask)
-    %%% Your code here
+    %%%%%%%%%%%%%%%%%%
+    % YOUR CODE HERE:
+    %%%%%%%%%%%%%%%%%%
+    
+    %%%%%%%%%%%%%%%%%%
+    % END OF YOUR CODE
+    %%%%%%%%%%%%%%%%%%
 end
