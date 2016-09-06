@@ -1,7 +1,12 @@
 function [optSeamMask, seamEnergy] = findOptSeam(energy)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % following paper by Avidan and Shamir `07
-% finds optimal seam
+% finds optimal seam by the given 
 % returns mask with 0 mean a pixel is in the seam
+% You only need to implement vertical seam. For
+% horizontal case, just using the same function by 
+% giving energy for the transpose image I'.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     % find M for vertical seams
     % for vertical - use I`
