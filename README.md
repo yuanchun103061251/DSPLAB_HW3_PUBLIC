@@ -31,8 +31,9 @@ If the picture has 3 channels, just sum values of the energy for each channel. E
 ### Seam
 If we delete pixels with minimum energy but random positions, we will get distorted picture. If we delete columns/rows with minimum energy, we will get artifacts. The solution is to introduce a generalization of column/row (called seam). Formally, let I is n x m image, then a vertical seam is defined as follow: 
 <center>
-<img src="./index_files/formula_seam.jpg" width=40% >
+<img src="./index_files/formula_seam.JPG" width=40% >
 </center>
+
 where x is a mapping x: [1,..,n] -> [1,..,m]. It means that a vertical seam is path from the top of the picture to the bottom such that the length of the path in pixels is width of the image, and for each seam element `(i,j)`, the next seam element can be only `(i+1, j-1)`, `(i+1, j)`, `(i+1, j+1)`. Similarly, we can define a horizontal seam. Examples of seams are shown on the figure below in black:
 <img src="./index_files/seam.JPG"  >
 
@@ -40,6 +41,7 @@ We are looking for a seam with the minimum energy among all seams (in chosen dim
 <center>
 <img src="./index_files/formula_optimal_seam.JPG" width=25%>. 
 </center>
+
 The way to find such an optimal seam is by using dynamic programming:
 
 1. Find `M` - minimum energy for all possible seams for each `(i, j)`:
