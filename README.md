@@ -29,16 +29,16 @@ In this programming assignment, we will implement this algorithm and this will i
 
 <table border=0>
 <tr>
-<td>|------------------seam carving--------------------|
-----------------------scaling------------------------|
----------------------cropping----------------------|
+<td>|--------------seam carving--------------|
+-----------------scaling------------------|
+---------------cropping-----------------|
 </td>
 </tr>
 <tr>
 <td>
-<img src="./index_files/sea/seamCarving.jpg" width=33% >
-<img src="./index_files/sea/scaling.jpg" width=33% >
-<img src="./index_files/sea/cropping.jpg" width=33% >
+<img src="./index_files/sea/seamCarving.jpg" width=32% >
+<img src="./index_files/sea/scaling.jpg" width=32% >
+<img src="./index_files/sea/cropping.jpg" width=32% >
 </td>
 </tr>
 </table>
