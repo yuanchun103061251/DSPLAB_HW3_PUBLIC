@@ -2,7 +2,7 @@
 %
 % Distributed under the FreeBSD Software License (See accompanying file license.txt)
 
-function image = seamCarving(newSize, image)
+function image = seamCarving(image, newSize)
 % apply seam carving to the image
 % following paper by Avidan and Shamir '07
     sizeReductionX = size(image, 1) - newSize(1);
