@@ -23,8 +23,6 @@ function image = seamCarvingReduce(sizeReduction, image)
     image = addOrDeleteSeams(transBitMask, sizeReduction, image, @reduceImageByMask);
 end
 
-% TODO Bug: enlarge gives artifacts althout I chouse different seams as described 
-% in 4.3 in the paper
 function image = seamCarvingEnlarge(sizeEnlarge, image)
     if (sizeEnlarge == 0)
         return;

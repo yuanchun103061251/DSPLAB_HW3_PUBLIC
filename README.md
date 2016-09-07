@@ -23,6 +23,25 @@ In this programming assignment, we will implement this algorithm and this will i
 * Find optimal order of deleting/adding seams.
 * Reduce/Enlarge an image by a given mask.
 
+<p align="center">
+<img src="./index_files/sea/original.jpg">
+</p>
+
+<table border=0>
+<tr>
+<td>|------------------seam carving--------------------|
+----------------------scaling------------------------|
+---------------------cropping----------------------|
+</td>
+</tr>
+<tr>
+<td>
+<img src="./index_files/sea/seamCarving.jpg" width=33% >
+<img src="./index_files/sea/scaling.jpg" width=33% >
+<img src="./index_files/sea/cropping.jpg" width=33% >
+</td>
+</tr>
+</table>
 ##Details
 For simplification, we will describe only reducing the size of the image. But enlarging process is very similar and described in the last section. 
 ### Energy
@@ -36,7 +55,7 @@ If we delete pixels with minimum energy but random positions, we will get distor
 
 where x is a mapping x: [1,..,n] -> [1,..,m]. It means that a vertical seam is path from the top of the picture to the bottom such that the length of the path in pixels is width of the image, and for each seam element `(i,j)`, the next seam element can be only `(i+1, j-1)`, `(i+1, j)`, `(i+1, j+1)`. Similarly, we can define a horizontal seam. Examples of seams are shown on the figure below in black:
 <p align="center">
-<img src="./index_files/seam.JPG"  >
+<img src="./index_files/sea/seam.jpg"  >
 </p>
 We are looking for a seam with the minimum energy among all seams (in chosen dimension): 
 <p align="center">
