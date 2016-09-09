@@ -88,30 +88,29 @@ In order to enlarge a picture, we first compute k optimal seams but then, instea
 For this project, and all other projects, you must do a project report in results folder using [Markdown](https://help.github.com/articles/markdown-basics). We provide you with a placeholder [index.md](./results/index.md) document which you can edit. In the report you will describe your algorithm and any decisions you made to write your algorithm a particular way. Then, you will describe how to run your code and if your code depended on other packages. Finally, you will show and discuss the results of your algorithm. In the case of this project, show the results of your filtering algorithm (the test script saves such images already) and show some of the intermediate images in the hybrid image pipeline (e.g. the low and high frequency images, which the starter code already saves for you). Also, discuss anything extra you did. Feel free to add any other information you feel is relevant.
 
 ## Rubric
-* +5 pts: Working implementation of gradient of pixel in `energyRGB.m`
-* +20 pts: Working implementation of finding optimal seam in `findOptSeam.m`
-* +5 pts: Working implementation of reduce pixels by input mask in `reduceImageByMask.m`
-* +25 pts: Working implementation of finding a transport matrix in `findTransportMatrix.m`
-* +5 pts: Working implementation of image enlarging in `enlargeImageByMask.m`
-* +20 pts: Writeup with several examples of image images
-* +5 pts: Extra credit (up to ten points)
-* -5*n pts: Lose 5 points for every time (after the first) you do not follow the instructions for the hand in format
+* +20 pts: Working implementation of gradient of pixel in `energyRGB.m`.
+* +20 pts: Working implementation of finding optimal seam in `findOptSeam.m`.
+* +20 pts: Working implementation of reduce pixels by input mask in `reduceImageByMask.m`.
+* +20 pts: Writeup with several examples of image images.
+* +20 pts: Writeup report with concept and result analysis. 
+* +5 pts: Comnplement image enlargement.
+* -5*n pts: Lose 5 points for every time (after the first) you do not follow the instructions for the hand in format.
 
 ## Get start & hand in
 * Publicly fork version (+2 extra points)
-	- [Fork the homework](https://education.github.com/guide/forks) to obtain a copy of the homework in your github account
-	- [Clone the homework](http://gitref.org/creating/#clone) to your local space and work on the code locally
-	- Commit and push your local code to your github repo
-	- Once you are done, submit your homework by [creating a pull request](https://help.github.com/articles/creating-a-pull-request)
+	- [Fork the homework](https://education.github.com/guide/forks) to obtain a copy of the homework in your github account.
+	- [Clone the homework](http://gitref.org/creating/#clone) to your local space and work on the code locally.
+	- Commit and push your local code to your github repo.
+	- Once you are done, submit your homework by [creating a pull. request](https://help.github.com/articles/creating-a-pull-request)
 
 * [Privately duplicated version](https://help.github.com/articles/duplicating-a-repository)
-  - Make a bare clone
-  - mirror-push to new repo
+  - Make a bare clone.
+  - mirror-push to new repo.
   - [make new repo private](https://help.github.com/articles/making-a-private-repository-public)
   - [add aliensunmin as collaborator](https://help.github.com/articles/adding-collaborators-to-a-personal-repository)
-  - [Clone the homework](http://gitref.org/creating/#clone) to your local space and work on the code locally
-  - Commit and push your local code to your github repo
-  - I will clone your repo after the due date
+  - [Clone the homework](http://gitref.org/creating/#clone) to your local space and work on the code locally.
+  - Commit and push your local code to your github repo.
+  - I will clone your repo after the due date.
 
 ## Credits
 	Assignment modified by Min Sun and TingAn Chien based on K. Lykov's open source example.
