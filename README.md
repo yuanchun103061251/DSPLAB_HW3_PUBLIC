@@ -66,7 +66,7 @@ The way to find such an optimal seam is by using dynamic programming:
 
 1. Find `M` - minimum energy for all possible seams for each `(i, j)`:
  * fill in the first row by energy
- * for all rows starting from second: `M[i, j] = e[i, j] + min(M[i - 1, j], M[i, j], M[i + 1, j])`;
+ * for all rows starting from second: `M[i, j] = e[i, j] + min(M[i - 1, j - 1], M[i - 1, j], M[i - 1, j + 1])`;
 2. Find the minimum value in the last row of M and traverse back choosing pixels with minimum energy. 
 
 You can follow the hint in `findOptSeam.m` to complete this part. Now we are able to compute seams, and then we need to remove them from the image. Edit `reduceImageByMask.m` to remove pixels by the given input mask.
