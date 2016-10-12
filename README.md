@@ -6,10 +6,10 @@
 seam. The example on the top right shows the result of extending in one dimension and reducing in the other, compared to
 standard scaling on the bottom right.)
 
-# Project 4: Seam Carving for Content-Aware Image Resizing
+# Project 3: Seam Carving for Content-Aware Image Resizing
 
 ## Brief
-* Due: 11/XX/2016 at 8am
+* Due: 11/14/2016 at 8am
 * Required files: results/index.md, and code/
 
 ##Overview
