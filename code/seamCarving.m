@@ -11,8 +11,6 @@ function image = seamCarving(image, newSize)
     mmax = @(left, right) max([left right]);
     
     image = seamCarvingReduce([mmax(0, sizeReductionX), mmax(0, sizeReductionY)], image);
-    
-    image = seamCarvingEnlarge([mmax(0, -sizeReductionX), mmax(0, -sizeReductionY)], image);
 end
 
 function image = seamCarvingReduce(sizeReduction, image)
@@ -20,15 +18,7 @@ function image = seamCarvingReduce(sizeReduction, image)
         return;
     end;
     [T, transBitMask] = findTransportMatrix(sizeReduction, image);
-    image = addOrDeleteSeams(transBitMask, sizeReduction, image, @reduceImageByMask);
-end
-
-function image = seamCarvingEnlarge(sizeEnlarge, image)
-    if (sizeEnlarge == 0)
-        return;
-    end;
-    [T, transBitMask] = findTransportMatrix(sizeEnlarge, image);
-    image = addOrDeleteSeams(transBitMask, sizeEnlarge, image, @enlargeImageByMask);
+    image = DeleteSeams(transBitMask, sizeReduction, image, @reduceImageByMask);
 end
 
 
