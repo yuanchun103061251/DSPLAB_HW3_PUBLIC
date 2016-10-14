@@ -20,8 +20,8 @@ In this programming assignment, we will implement this algorithm and this will i
 * Define an energy function that would map a pixel into energy value.
 * Define the path of pixels (called seam), which length is width/height of the image.
 * Looking for a seam with the minimum energy among all seams(in chosen dimension).
-* Find optimal order of deleting/adding seams.
-* Reduce/Enlarge an image by a given mask.
+* Find optimal order of deleting seams.
+* Reduce an image by a given mask.
 
 <p align="center">
 <img src="./index_files/sea/original.jpg">
@@ -29,21 +29,26 @@ In this programming assignment, we will implement this algorithm and this will i
 
 <table border=0>
 <tr>
-<td>|--------------seam carving--------------|
------------------scaling------------------|
----------------cropping-----------------|
+<td>|-------------seam carving-------------|
 </td>
+<td>
+|----------------scaling-----------------|
+</td>
+<td>
+|--------------cropping----------------|
+</td>
+</table>
 </tr>
+<table border=1>
 <tr>
 <td>
 <img src="./index_files/sea/seamCarving.jpg" width=32% >
 <img src="./index_files/sea/scaling.jpg" width=32% >
 <img src="./index_files/sea/cropping.jpg" width=32% >
-</td>
 </tr>
 </table>
 ##Details
-For simplification, we will describe only reducing the size of the image. But enlarging process is very similar and described in the last section. 
+For simplification, we will describe only reducing the size of the image. Enlarging process is very similar and described in the last section, and this part is not required but you still can implement it by yourself.
 ### Energy
 The idea is to remove content that has smaller meaning for the user (contain less information). We will call this information “energy”. Thus we need to introduce an energy function that would map a pixel into energy value. Here we use gradient of the pixel as an energy function: `e=|dI/dx|+|dI/dy|`.
 If the picture has 3 channels, just sum values of the energy for each channel. Edit `energyRGB.m` for doing this part.
@@ -77,7 +82,7 @@ For now, it is already a good tool for reducing image in one dimension - just fi
 Let `n’ x m’` are desirable size of the image `(n’ < n, m’ < m)`. We introduce a transport matrix `T` which defines for every n’ x m’ the cost of the optimal sequence of horizontal and vertical seam removal operations. It is more suitable to introduce `r = n - n’` and `c = m - m’` which defines number of horizontal and vertical removal operations. In addition to `T` we introduce a map of the size `r x c` TBM which specifies for every `T(i, j)` whether we came to this point using horizontal `(0)` or vertical `(1)` seam removal operation. Edit the `findTransportMatrix()` function to complete this part. 
 
 ### Enlarging an image
-In order to enlarge a picture, we first compute k optimal seams but then, instead of deleting, duplicate the pixels of each seam by averaging them with their left and right neighbors(verticla case). Edit `enlargeImageByMask.m` to add pixels by the given input mask.
+In order to enlarge a picture, we first compute k optimal seams but then, instead of deleting, duplicate the pixels of each seam by averaging them with their left and right neighbors(verticla case).
 
 ## Extra Points
 * +2 pts: If you make your code publicly available.
