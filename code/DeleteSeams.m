@@ -1,4 +1,4 @@
-function image = addSeams(transBitMask, sizeReduction, image, operation)
+function image = DeleteSeams(transBitMask, sizeReduction, image, operation)
 % delete seams following optimal way
     i = size(transBitMask, 1);
     j = size(transBitMask, 2);
