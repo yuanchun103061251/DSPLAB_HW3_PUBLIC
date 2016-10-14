@@ -48,7 +48,7 @@ In this programming assignment, we will implement this algorithm and this will i
 </tr>
 </table>
 ##Details
-For simplification, we will describe only reducing the size of the image. Enlarging process is very similar and described in the last section, and this part is not required but you still can implement it by yourself.
+For simplification, we will describe only reducing the size of the image. Enlarging process is very similar and described in the last section, and this part is not required but you can implement it by yourself.
 ### Energy
 The idea is to remove content that has smaller meaning for the user (contain less information). We will call this information “energy”. Thus we need to introduce an energy function that would map a pixel into energy value. Here we use gradient of the pixel as an energy function: `e=|dI/dx|+|dI/dy|`.
 If the picture has 3 channels, just sum values of the energy for each channel. Edit `energyRGB.m` for doing this part.
