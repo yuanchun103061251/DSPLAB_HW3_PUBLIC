@@ -17,7 +17,7 @@ function [optSeamMask, seamEnergy] = findOptSeam(energy)
     
     % For all rows starting from second row, fill in the minimum 
     % energy for all possible seam for each (i,j) in M, which
-    % M[i, j] = e[i, j] + min(M[i - 1, j], M[i, j], M[i + 1, j]).     
+    % M[i, j] = e[i, j] + min(M[i - 1, j - 1], M[i - 1, j], M[i - 1, j + 1]).     
     
     %%%%%%%%%%%%%%%%%%
     % YOUR CODE HERE:
