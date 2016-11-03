@@ -31,6 +31,7 @@ function [optSeamMask, seamEnergy] = findOptSeam(energy)
     % Find the minimum element in the last raw of M
     [val, idx] = min(M(sz(1), :));
     seamEnergy = val;
+    fprintf('Optimal energy: %f',seamEnergy);
     
     % Initial for optimal seam mask
     optSeamMask = zeros(size(energy), 'uint8');
