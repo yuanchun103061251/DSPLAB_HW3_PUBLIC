@@ -133,7 +133,7 @@ from left to right: beauty_and_the_beast scaling, beauty_and_the_beast cropping
 </table>
 
 ## result5  <br />
-from left to right: beauty_and_the_beast, beauty_and_the_beast seam_carving
+from left to right: tonight show, tonight show seam_carving
 <table border=1>
 <tr>
 <td>
@@ -142,7 +142,7 @@ from left to right: beauty_and_the_beast, beauty_and_the_beast seam_carving
 </td>
 </tr>
 </table>
-from left to right: beauty_and_the_beast scaling, beauty_and_the_beast cropping
+from left to right: tonight show scaling, tonight show cropping
 <table border=1>
 <tr>
 <td>
