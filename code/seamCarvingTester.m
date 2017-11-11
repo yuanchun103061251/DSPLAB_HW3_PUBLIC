@@ -7,7 +7,7 @@
 clear; close all; clc;
 
 %% Load data
-image = imread('../data/sea.jpg');
+image = imread('../data/emma.png');
 sz = size(image);
 % resize image to half size
 image = imresize(image, [floor(sz(1)/3), floor(sz(2)/3)]);
